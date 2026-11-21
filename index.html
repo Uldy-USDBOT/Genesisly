@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Genesis.ly — Domain for Sale (Copy)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Cairo:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f1ec;--ink:#14213d;--muted:#5b6478;--accent:#1f6f5c;--accent-ink:#fff;--card:#fff;--line:#d9d5ca;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1420;--ink:#eef1f7;--muted:#9aa5ba;--accent:#3fbf9f;--accent-ink:#06231c;--card:#152033;--line:#26334a}}
+:root[data-theme="dark"]{--bg:#0d1420;--ink:#eef1f7;--muted:#9aa5ba;--accent:#3fbf9f;--accent-ink:#06231c;--card:#152033;--line:#26334a}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Cairo",system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+html[lang="ar"] body{font-family:Cairo,Inter,system-ui,sans-serif}
+header{width:100%;max-width:960px;display:flex;justify-content:space-between;align-items:center;padding:20px 24px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.3rem;direction:ltr}
+.lang{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:999px;font:600 .9rem Cairo,Inter,sans-serif;cursor:pointer}
+.lang:hover{border-color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+main{width:100%;max-width:960px;padding:0 24px 48px;text-align:center}
+.hero{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#0b1730}
+.hero svg{display:block;width:100%;height:auto}
+.price-line{margin:28px 0 8px;color:var(--muted);font-size:1.05rem}
+.buy{display:inline-block;margin-top:12px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font:700 1.5rem Inter,Cairo,sans-serif;padding:18px 56px;border-radius:14px;transition:transform .15s}
+.buy:hover{transform:translateY(-2px)}
+.secure{margin-top:20px;display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-weight:600}
+.secure svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:2}
+footer{margin-top:auto;padding:24px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Genesis.ly</div>
+  <button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+</header>
+<main>
+  <div class="hero" role="img" aria-label="Genesis.ly">
+    <svg viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#5ff0c4" stop-opacity=".9"/><stop offset=".45" stop-color="#1f8f7a" stop-opacity=".35"/><stop offset="1" stop-color="#0b1730" stop-opacity="0"/></radialGradient>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1730"/><stop offset="1" stop-color="#10305a"/></linearGradient>
+      </defs>
+      <rect width="960" height="440" fill="url(#bg)"/>
+      <circle cx="480" cy="220" r="210" fill="url(#g)"/>
+      <g fill="none" stroke="#8fe9d0" stroke-opacity=".35">
+        <circle cx="480" cy="220" r="90"/><circle cx="480" cy="220" r="140"/><circle cx="480" cy="220" r="190"/>
+        <ellipse cx="480" cy="220" rx="300" ry="70" transform="rotate(-18 480 220)"/>
+      </g>
+      <g fill="#cffbee"><circle cx="270" cy="150" r="4"/><circle cx="700" cy="120" r="3"/><circle cx="760" cy="290" r="5"/><circle cx="190" cy="300" r="3"/><circle cx="600" cy="360" r="3"/></g>
+      <text x="480" y="244" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="700" font-size="84" fill="#fff">Genesis.ly</text>
+    </svg>
+  </div>
+  <p class="price-line" id="tag">The premium .ly domain for your next big beginning.</p>
+  <a class="buy" id="buy" href="https://www.atom.com/view/name/Genesis.ly" target="_blank" rel="noopener">Buy Now</a>
+  <div><span class="secure"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span id="sec">Secure Transfer</span></span></div>
+</main>
+<footer id="foot">Sold through Atom.com</footer>
+<script>
+var T={en:{lang:"en",dir:"ltr",btn:"العربية",tag:"The premium .ly domain for your next big beginning.",buy:"Buy Now",sec:"Secure Transfer",foot:"Sold through Atom.com"},
+ar:{lang:"ar",dir:"rtl",btn:"English",tag:"نطاق .ly مميز لبداية مشروعك الكبير.",buy:"اشتري الآن",sec:"نقل آمن",foot:"يُباع عبر Atom.com"}};
+var cur="en";
+function apply(l){var t=T[l];document.documentElement.lang=t.lang;document.documentElement.dir=t.dir;
+document.getElementById("lang").textContent=t.btn;document.getElementById("tag").textContent=t.tag;
+document.getElementById("buy").textContent=t.buy;document.getElementById("sec").textContent=t.sec;document.getElementById("foot").textContent=t.foot;}
+document.getElementById("lang").addEventListener("click",function(){cur=cur==="en"?"ar":"en";apply(cur);});
+</script>
+</body>
+</html>
